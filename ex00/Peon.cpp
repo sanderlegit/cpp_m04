@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/20 11:16:06 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/20 11:45:52 by averheij      ########   odam.nl         */
+/*   Updated: 2021/01/20 16:37:31 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ void					Peon::getPolymorphed(void) const {
 }
 
 Peon &					Peon::operator=(Peon const & rhs) {
+	_name = rhs._name;
 	return *this;
 }

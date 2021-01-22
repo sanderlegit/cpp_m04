@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/21 12:31:12 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/21 14:03:34 by averheij      ########   odam.nl         */
+/*   Updated: 2021/01/22 13:07:33 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class MateriaSource : public IMateriaSource {
 		MateriaSource &			operator=(MateriaSource const & rhs);
 	private:
 		static const int		_mc = 4;
-		AMateria				*_materia[_mc] = {};
+		AMateria				*_materia[_mc];
 };
 
 #endif

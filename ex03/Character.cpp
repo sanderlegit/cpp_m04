@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/20 17:55:23 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/21 14:34:37 by averheij      ########   odam.nl         */
+/*   Updated: 2021/01/22 13:08:19 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 Character::Character(void) {
 	_name = "Nameless";
+	for (int i = 0; i < _mc; i++)
+		_materia[i] = NULL;
 	return;
 }
 

@@ -6,13 +6,15 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/21 12:31:14 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/21 14:36:02 by averheij      ########   odam.nl         */
+/*   Updated: 2021/01/22 13:08:10 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "MateriaSource.hpp"
 
 MateriaSource::MateriaSource(void) {
+	for (int i = 0; i < _mc; i++)
+		_materia[i] = NULL;
 	return;
 }
 

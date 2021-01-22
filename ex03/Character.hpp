@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/20 17:55:25 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/21 14:03:44 by averheij      ########   odam.nl         */
+/*   Updated: 2021/01/22 13:07:00 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ class Character : public ICharacter{
 	private:
 		std::string				_name;
 		static const int		_mc = 4;
-		AMateria				*_materia[_mc] = {};
+		AMateria				*_materia[_mc];
 };
 
 #endif

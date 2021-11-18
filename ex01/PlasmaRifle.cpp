@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   PlasmaRifle.cpp                                    :+:    :+:            */
+/*   PlasmaRifle.cpp                                   e8'   8   '8e          */
 /*                                                     +:+                    */
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/20 12:18:50 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/20 13:11:19 by averheij      ########   odam.nl         */
+/*   Updated: 2021/11/18 16:15:00 by dries               **ee8ee**            */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PlasmaRifle.hpp"
 
-PlasmaRifle::PlasmaRifle(void) {
-	_name = "Plasma Rifle";
-	_damage = 21;
-	_apcost = 5;
+PlasmaRifle::PlasmaRifle(void) : AWeapon("Plasma Rifle", 5, 21) {
 	return;
 }
 
@@ -34,8 +31,6 @@ void				PlasmaRifle::attack() const {
 }
 
 PlasmaRifle &		PlasmaRifle::operator=(PlasmaRifle const & rhs) {
-	_name = rhs._name;
-	_damage = rhs._damage;
-	_apcost = rhs._apcost;
+	AWeapon::operator=(rhs);
 	return *this;
 }

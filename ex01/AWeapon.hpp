@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   AWeapon.hpp                                        :+:    :+:            */
+/*   AWeapon.hpp                                       e8'   8   '8e          */
 /*                                                     +:+                    */
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/20 12:11:59 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/20 13:24:40 by averheij      ########   odam.nl         */
+/*   Updated: 2021/11/18 16:07:29 by dries               **ee8ee**            */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class AWeapon {
 		virtual void			attack(void) const = 0;
 
 		AWeapon &				operator=(AWeapon const & rhs);
-	protected:
+	private:
 		std::string		_name;
 		int				_apcost;
 		int				_damage;

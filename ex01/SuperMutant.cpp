@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   SuperMutant.cpp                                    :+:    :+:            */
+/*   SuperMutant.cpp                                   e8'   8   '8e          */
 /*                                                     +:+                    */
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/20 12:31:41 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/20 13:10:45 by averheij      ########   odam.nl         */
+/*   Updated: 2021/11/18 16:15:30 by dries               **ee8ee**            */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "SuperMutant.hpp"
 
-SuperMutant::SuperMutant(void) {
-	_hp = 170;
-	_type = "Super Mutant";
+SuperMutant::SuperMutant(void) : Enemy(170, "Super Mutant"){
 	std::cout << "Gaaah. Me want smash heads!" << std::endl;
 	return;
 }
@@ -36,7 +34,6 @@ void				SuperMutant::takeDamage(int d) {
 }
 
 SuperMutant &		SuperMutant::operator=(SuperMutant const & rhs) {
-	_hp = rhs._hp;
-	_type = rhs._type;
+	Enemy::operator=(rhs);
 	return *this;
 }

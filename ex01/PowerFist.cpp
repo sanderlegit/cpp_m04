@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   PowerFist.cpp                                      :+:    :+:            */
+/*   PowerFist.cpp                                     e8'   8   '8e          */
 /*                                                     +:+                    */
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/20 12:24:17 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/20 13:12:53 by averheij      ########   odam.nl         */
+/*   Updated: 2021/11/18 16:14:55 by dries               **ee8ee**            */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PowerFist.hpp"
 
-PowerFist::PowerFist(void) {
-	_name = "Power Fist";
-	_damage = 50;
-	_apcost = 8;
+PowerFist::PowerFist(void) : AWeapon("Power Fist", 8, 50) {
 	return;
 }
 
@@ -34,8 +31,6 @@ void			PowerFist::attack(void) const {
 }
 
 PowerFist &		PowerFist::operator=(PowerFist const & rhs) {
-	_name = rhs._name;
-	_damage = rhs._damage;
-	_apcost = rhs._apcost;
+	AWeapon::operator=(rhs);
 	return *this;
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   Enemy.hpp                                          :+:    :+:            */
+/*   Enemy.hpp                                         e8'   8   '8e          */
 /*                                                     +:+                    */
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/20 12:26:38 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/20 13:09:56 by averheij      ########   odam.nl         */
+/*   Updated: 2021/11/18 16:13:39 by dries               **ee8ee**            */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Enemy {
 		virtual void		takeDamage(int d);
 
 		Enemy &		operator=(Enemy const & rhs);
-	protected:
+	private:
 		int					_hp;
 		std::string			_type;
 };

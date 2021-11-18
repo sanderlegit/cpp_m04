@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   RadScorpion.cpp                                    :+:    :+:            */
+/*   RadScorpion.cpp                                   e8'   8   '8e          */
 /*                                                     +:+                    */
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/20 12:47:09 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/20 13:10:52 by averheij      ########   odam.nl         */
+/*   Updated: 2021/11/18 16:14:48 by dries               **ee8ee**            */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RadScorpion.hpp"
 
-RadScorpion::RadScorpion(void) {
-	_hp = 80;
-	_type = "RadScorpion";
+RadScorpion::RadScorpion(void) : Enemy(80, "RadScorpion"){
 	std::cout << "* click click click *" << std::endl;
 	return;
 }
@@ -31,7 +29,6 @@ RadScorpion::~RadScorpion(void) {
 }
 
 RadScorpion &		RadScorpion::operator=(RadScorpion const & rhs) {
-	_hp = rhs._hp;
-	_type = rhs._type;
+	Enemy::operator=(rhs);
 	return *this;
 }
